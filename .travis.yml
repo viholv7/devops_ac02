@@ -2,7 +2,7 @@ idioma : python
 python :
   - 3,6
 before_install :
-  - python - versão
+  - python - versão 
   - instalação do pip -U pip
   - pip install codecov
 script :
