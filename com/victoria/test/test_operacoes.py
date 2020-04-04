@@ -1,11 +1,11 @@
-da  importação mais unificada  TestCase 
-do  com . kuma . operações  importação  operações
 
-classe  TestOperacoes ( TestCase ):
-    # Operações (). Soma ([1, 3])
+from unittest import TestCase
+from com.victoria.operacoes import Operacoes
 
-    def  setUp ( auto ):
-        eu . operações  =  operações ()
+class TestOperacoes(TestCase):
 
-    def  test_soma ( self ):
-        eu . assertEqual ( auto . OPERACOES . Soma ([ 1 , 3 ]), 5 , 'Deveria Ser 4' )
+    def setUp(self):
+        self.operacoes = Operacoes()
+    
+    def test_soma(self):
+        self.assertEqual(self.operacoes.soma([5, 3]), 8, "tem que ser 8")

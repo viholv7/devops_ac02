@@ -1,8 +1,12 @@
-classe  Operacoes ():
-    def  soma ( auto , Valores ):
-        val  =  0
-        para  v  em  valores :
-            val  =  val  +  v
-        retorno  val
-
-# print (Operações (). soma ([1, 3]))
+class Operacoes():
+    def soma(self, valores):
+        val = 0
+        for v in valores:
+            val = val + v
+        return val
+    
+    def subtracao(self, valores):
+        val = 0
+        for v in valores:
+            val = val - v
+        return val

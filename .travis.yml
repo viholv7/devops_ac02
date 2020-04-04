@@ -1,10 +1,8 @@
-idioma : python
-python :
-  - 3,6
-before_install :
-  - python - versão 
-  - instalação do pip -U pip
-  - pip install codecov
-script :
-  - coverage run --source=com/victoria/ -m unittest discover;coverage report -m
+language: python
+python:
+  - 3.6
+before_install:
+  - python --version
+  - pip install -U pip
+script:
   - python -m unittest discover
