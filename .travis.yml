@@ -4,5 +4,7 @@ python :
 before_install :
   - python - versão
   - instalação do pip -U pip
+  - pip install codecov
 script :
-  - python -m descoberta mais unificada
+  - coverage run --source=com/victoria/ -m unittest discover;coverage report -m
+  - python -m unittest discover
